@@ -1,0 +1,19 @@
+div{
+    width: 400px;
+    height: 400px;
+    
+    background-color: darkred;
+    /* float used for changing place  */
+float: left;     
+    margin: 10px;
+}
+div img{
+    width: 100%;
+    border-radius: 10px;
+}
+img{
+    width: 200px;
+    height: 200px;
+    margin-top: 80px;
+    border-radius: 50%;
+}

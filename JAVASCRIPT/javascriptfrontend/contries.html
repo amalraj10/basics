@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <title>Contries Details</title>
+</head>
+<body style="background-image: url('https://universalpartnership.org/wp-content/uploads/2013/03/world-hd-background-web-design-artwork-yellow-maps-country.jpg'); background-size: cover;">
+  <div class="container" style="background-image: url('');">
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+            <h1 class="text text-center text-white mt-5">Know About The Country</h1>
+            <div class="d-flex justify-content-center mt-5" >
+                <input id="inputname" type="text" placeholder="country" class="form-control">
+                <input onclick="search()" type="button" value="Details" class="bg-success ms-3">
+               
+            </div>
+    </div>
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 mt-5">
+            <div id="result" class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+             
+               
+            </div>
+        </div>
+    </section>
+    <div class="col-3"></div>
+  </div>
+    </body>
+    <script>
+        //function definition
+        const search = async()=>{
+            let countryName = inputname.value
+            console.log(countryName);
+            if(countryName){
+               response = await fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`)
+           console.log(response.json().then((data)=>{
+            console.log(data[0]);
+
+            let cname = data[0].name.common
+            console.log(cname);
+
+            let flag=data[0].flags.png
+            console.log(flag);
+
+            let timezone=data[0].timezones[0]
+            console.log(timezone);
+
+
+         for( var currency in data[0].currencies){
+            var currencyName = data[0].currencies[currency].name
+            var currencySymbol = data[0].currencies[currency].symbol
+         }
+            console.log(currencyName);
+            console.log(currencySymbol);
+            
+
+          let language = data[0].languages
+          let national_language = []
+           
+          for(var lang in language){
+            national_language.push(language[lang])
+          }
+          console.log(national_language);
+            
+
+            
+            let populations=data[0].population
+            console.log(populations);
+
+               
+            let content=data[0].continents[0]
+            console.log(content);
+
+                        
+            let captial=data[0].capital[0]
+            console.log(captial);
+
+
+      
+
+            result.innerHTML=    `  <div class="card" style="width: 18rem;">
+  <img src="${flag}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">${cname}</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">${captial}</li>
+    <li class="list-group-item">${timezone}</li>
+    <li class="list-group-item">${currencyName}</li>
+
+    <li class="list-group-item">${currencySymbol}</li>
+    <li class="list-group-item">${national_language}</li>
+    <li class="list-group-item">${populations}</li>
+    <li class="list-group-item">${content}</li>
+  </ul>
+  <div class="card-body">
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>`
+
+           }));
+            }
+            else{
+                alert('please enter a valid input')
+            }
+        }
+    </script>
+    </html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <title>Home</title>
+
+    <style>
+        header{
+            background-image: url('https://th.bing.com/th/id/R.7a63023293d311f489722a8493c0ca1f?rik=4deRRjehSj7vIQ&riu=http%3a%2f%2fhdqwalls.com%2fwallpapers%2frog-logo-4k-3x.jpg&ehk=tcFuQq4c9ZYp2g4QM5%2b326UOpkb7%2fHMOM6U0tIK0FCo%3d&risl=1&pid=ImgRaw&r=0');
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        body{
+            background-image: url('https://th.bing.com/th/id/R.d023351cd802d65c50f0f5cfd372f297?rik=AKM1qkQvw1KLsg&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f05%2fDesktop-gaming-backgrounds-1080p-dosh-tosh.jpg&ehk=vdt7p4cwZQfq4ul%2fSKWfhGTpUBcqPgBwvX%2blPS93sKA%3d&risl=&pid=ImgRaw&r=0');
+            overflow-x: hidden;
+        }
+        p{
+            text-align: justify;
+        }
+        button{
+            width: 200px;
+            margin-left: 200px;
+        }
+        .a1{
+            font-size: 30px;
+           float: left;
+           text-decoration: none;
+           color: #fff;
+        }
+        .a2{
+            font-size: 30px;
+           float: right;
+           text-decoration: none;
+           
+
+        }
+        button{
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+       <a class="a1" href=""> <i class="fa-solid fa-bars pe-3 " style="color: #fff;"></i>Dashboard</a>
+       <button type="button" class="a2 bg-transparent  "><i class="fa-solid fa-arrow-right-from-bracket pe-3 " style="color: #fff;"></i><span style="color: #fff;" onclick="logout()">Logout</span></button>
+
+        <h1>Home</h1>
+    </header>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 style=" color: #fff; display: flex; justify-content: center; align-items: center;" >Welcome <span style="color: orange; " class="ps-3" id="username">User</span></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur assumenda beatae voluptatum obcaecati iure! Ipsum iusto voluptates, necessitatibus qui quam maiores cumque magni delectus! Aperiam sapiente delectus aliquid soluta tempora. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt quod optio qui. Error beatae labore officia ex enim sunt alias quasi quidem quas omnis! Iste exercitationem est numquam nam. Quo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eos quis voluptatibus quae. Similique ea voluptatem laboriosam cum. Sequi ipsam nisi reprehenderit, esse fugit aliquam perspiciatis in fugiat commodi eligendi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique consequatur architecto corporis iste repellat, atque veniam laborum magni esse iusto dignissimos id commodi est placeat saepe tenetur libero mollitia delectus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam molestias cupiditate odio, possimus impedit rerum et voluptatem voluptates consequuntur optio temporibus tenetur dolorem, corrupti cumque deserunt? Delectus, perspiciatis. Id, magni.</p>
+            </div>
+        </div>
+        
+
+    </div>
+
+
+</body>
+<script >
+    let user =localStorage.getItem("user")
+    // username.innerHTML=user
+    if (!user) {
+        alert("please login ")
+        window.location="login.html"
+        
+    }
+    else{
+        username.innerHTML=user
+
+    }
+
+    function logout(){
+        localStorage.removeItem("user")
+        window.location="login.html"
+    }
+</script>
+</html>

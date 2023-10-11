@@ -1,0 +1,123 @@
+#fbimg{
+    
+    height: 106px;
+    margin-top: 180px;
+    margin-left: 12%;
+
+}
+#fbtxt{
+    margin-top: -1%;
+    margin-left: 185px;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: lighter;
+    color: #1c1e21;
+   
+}
+*{
+    background-color: #ebebeb;
+  
+}
+ .EEP{
+    margin-left: 58%;
+    margin-top: -18%; 
+    background-color: white;
+    
+
+}
+#epn{
+    background-color: white;
+    width: 340px;
+    height: 45px;
+    margin-top: 15px;
+    margin-left:20px ;
+    border-radius: 10px;
+    font-size: medium;
+    border: 1px solid #dddfe2;
+   padding-left: 15px;
+   
+    /* border-radius: 6px; */
+   
+}
+#psd{
+    background-color: white;
+    width: 340px;
+    height: 45px;
+    margin-top: 12px;
+    font-size: medium;
+
+    margin-left:20px ;
+    border-radius: 10px;
+    border: 1px solid #dddfe2;
+    padding-left: 15px;
+
+}
+div{
+    width: 30%;
+    height: 350px;
+    border-radius: 10px;
+   box-shadow: 0px 0px 5px 5px rgb(224, 224, 224);
+    
+    
+}
+#button{
+    width: 348px;
+    height: 45px;
+    margin-top: 20px;
+    margin-left:20px ;
+    background-color: #1877f2;
+    color: white;
+    border: solid  #1877f2;
+    border-radius: 6px;
+    font-size: 20px;
+    /* line-height: 48px; */
+    padding: 0 16px;
+    /* font-size: 14px; */
+   
+    font-weight: bold;
+
+}
+#FRGP{
+    margin-left: 35%;
+    margin-top: -20px;
+    /* font-family: inherit; */
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    background-color: white;
+    color: #1877f2;
+    font-weight: var(--base-text-weight-light, 300);
+    
+
+    font-size: 14px;
+
+    
+}
+#CNA{
+    width: 200PX;
+    height: 52px;
+    margin-left: 100px;
+    color: white;
+    background-color: rgb(44, 184, 39);
+    border: solid;
+    font-weight: bold;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-top: -10px;
+    border-radius: 10px;
+    
+}
+#last{
+    margin-left: 62%;
+    margin-top: 28px;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-weight: var(--base-text-weight-light, 300);
+    
+
+    font-size: 14px;
+}
+#FRGP:hover{
+    text-decoration: underline;
+}
+

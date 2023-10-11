@@ -1,0 +1,56 @@
+<!-- var() Function to insert value to varibles -->
+<!-- variable : to store data -->
+<!-- variables local scope, global scope -->
+<!-- local scope : limted access -->
+<!-- global scobe : through css file excess  -->
+
+
+<!-- global variables  -->
+<!-- :root{
+    --variable_name:value-case sensitive
+} -->
+
+
+<!-- local selector  -->
+<!-- selector{
+    --variable_name:value 
+} -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rootvar</title>
+    <style>
+        :root{
+            --x:blue;
+            --y:red;
+            --z:green;
+            --backg:black;
+        }
+        #para1{
+            color:var(--x);
+        }
+        #para2{
+            color: var(--y);
+        }
+        h1{
+            color: var(--z);
+        }
+        body{
+            background-color: var(--backg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Heading</h1>
+    <p id="para1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, mollitia placeat porro necessitatibus quo, provident veritatis odit dignissimos pariatur numquam rerum nobis impedit perferendis consequatur eveniet quam voluptatibus? Dolore, consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit distinctio pariatur ut voluptate animi sapiente, ea omnis velit minus itaque, aliquam iusto. Ipsa accusamus est atque sunt molestias velit consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sed eligendi laudantium? Veniam, in quibusdam! Commodi fugiat sequi sunt praesentium tenetur vero, provident consequatur pariatur corporis. Soluta, corporis omnis. Repellendus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro corrupti optio, accusamus blanditiis non, quis odio dolorum perspiciatis molestiae sunt minima recusandae doloribus eaque natus, similique ab libero sapiente eius?
+    </p>
+    <p id="para2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, mollitia placeat porro necessitatibus quo, provident veritatis odit dignissimos pariatur numquam rerum nobis impedit perferendis consequatur eveniet quam voluptatibus? Dolore, consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit distinctio pariatur ut voluptate animi sapiente, ea omnis velit minus itaque, aliquam iusto. Ipsa accusamus est atque sunt molestias velit consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sed eligendi laudantium? Veniam, in quibusdam! Commodi fugiat sequi sunt praesentium tenetur vero, provident consequatur pariatur corporis. Soluta, corporis omnis. Repellendus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro corrupti optio, accusamus blanditiis non, quis odio dolorum perspiciatis molestiae sunt minima recusandae doloribus eaque natus, similique ab libero sapiente eius?
+    </p>
+    
+    
+</body>
+</html>

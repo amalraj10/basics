@@ -1,0 +1,9 @@
+p{
+    border: 5px outset red;
+    padding 50px;
+    margin: 60px 40px;
+    background-color: aquamarine;
+}
+*{
+    background-color: black;
+}

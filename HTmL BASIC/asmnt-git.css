@@ -1,0 +1,119 @@
+img{
+    margin-top: 2%;
+    margin-left: 50%;
+    
+}
+
+#A{
+    margin-top: 5px;
+    font-family: apple-system, -apple-system,
+    BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;;
+    margin-left: 45%;
+    color: rgb(31, 35, 40);
+    font-weight :300;
+    color-scheme :light;
+    letter-spacing : -0.5px;
+}
+div{
+    background-color: hsla(180, 33%, 95%, 0.979);
+
+    /* background-color: hwb(0 100% 0%) */
+    /* background-color rgb(246, 248, 98%); */
+    width: 275px;
+    height: 202px;
+    margin-left: 40%;
+    color: rgb(0, 0, 0) ;
+    padding-left: 20px;
+    padding-top: 20px;
+    /* margin-top: -20px; */
+    border-radius: 8px;
+    
+    border: .01PX solid #dae1e2;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 13px;
+    margin-top: -20px;
+    
+
+}
+#fn{
+    width: 250px;
+    border-radius: 8PX;
+    height: 29px;
+    border:.001px solid #dae1e2;
+    margin-top: -8PX;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 12px 20px;
+}
+#LINK{
+    width: 275PX;
+    height: 35PX;
+    background-color: white;
+    text-align: center;
+    
+}
+#B{
+    padding-left: 110px;
+   padding-bottom: 20%;
+}
+#button{
+    color: white;
+    background-color: #228841;
+    width: 260px;
+    padding: 8px;
+    border-radius: 4px;
+    border: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+#FRGP{
+    margin-left: 100PX;
+    text-decoration: none;
+    font-weight: var(--base-text-weight-light, 300);
+    font-size: 12px;
+    /* padding-top: 111%; */
+    color: #2546b3;
+   
+    
+}
+/* * {
+    box-sizing: border-box;
+} */
+
+#TPSC
+{
+    margin-top: 100PX;
+width: 400PX;
+height: 100PX;
+background-color: white;
+border: white;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+font-weight: var(--base-text-weight-light, 300);
+font-size: 12px;
+margin-top: 50px;
+margin-left: 42%;
+}
+#PR{
+    padding: 14px;
+    text-decoration: none;
+    color:#2546b3;
+}
+#CG{
+    padding: 14px;
+    text-decoration: none;
+    color: rgba(90, 86, 86, 0.945);
+}
+#trm{
+    text-decoration: none;
+    color:#2546b3;
+}
+#SR{
+    /* padding: 14px; */
+    text-decoration: none;
+    color:#2546b3;
+}
+#CAA{
+    text-decoration: none;
+    color: #2546b3;
+}

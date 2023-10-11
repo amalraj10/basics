@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Alegreya+Sans+SC:wght@500&family=Bungee+Spice&family=Caveat&family=Cinzel&family=Monoton&family=Playfair+Display&family=Roboto+Slab&family=Smokum&family=Uncial+Antiqua&display=swap');
+
+body{
+    width: 100%;
+    background-image: url('https://i.postimg.cc/qR2BbqWv/images.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-size: cover;
+}
+.container{
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-bottom:2% ;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#img1{
+    width: 380px;
+    margin-left: 18%;
+}
+.head{
+    margin-top: 5%;
+    text-align: center;
+    font-weight: bolder;
+    font-family:caveat ;
+    font-size: 45px;
+}
+.input{
+margin-left: 20%;
+margin-top: 2%;
+width: 60%;
+height: 38px;
+border: none;
+border-bottom: 2px solid grey;
+
+}
+.input:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+input::placeholder{
+    font-family: cinzel;
+}
+button{
+    margin-top: 2%;
+    background-color: rgb(255, 255, 255);
+    margin-left: 40%;
+    border: none;
+    font-family: CINZEL;
+height: 45px; 
+width: 20%;
+border-radius:25px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+button:hover{
+  transform: scale(1.05);
+}
+@media screen and (max-width:767px) {
+    body{
+        background-image: none;
+        
+    }
+    .head{
+        font-size: 20px;
+    }
+    .container{
+        margin-top: 8%;
+        width: 75%;
+        height: 50%;
+    }
+    #img1{
+        margin-left: 0;
+    }
+    button{
+        width: 70%;
+        margin-left: 13%;
+        margin-top: 5%;
+    }
+
+}

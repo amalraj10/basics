@@ -1,0 +1,179 @@
+/* 1st */
+div{
+    width: 90px;
+    height: 90px;
+     border: 2px solid aqua; 
+    background-color: rgb(219, 100, 110);
+}
+
+#b{
+  
+    width: 90px;
+    height: 90px;
+
+    background-color: rgb(39, 94, 53);
+}
+#c
+{
+    width: 90px;
+    height: 90px;
+
+    background-color: rgb(68, 74, 104);
+}
+#d
+{
+    width: 90px;
+    height: 90px;
+
+    background-color: rgb(168, 179, 24);
+}
+#e
+{
+    width: 90px;
+    height: 90px;
+
+    background-color: rgb(110, 24, 180);
+}
+#z1
+{
+    padding-bottom: 20px;
+    margin-top: 40px;
+margin-left: 780px;   
+    transform:rotate(90deg) 
+}
+/* second */
+#A{
+    width: 90px;
+    height: 90px;
+
+    background-color: rgb(173, 26, 112);
+}
+#B{
+  
+    width: 90px;
+    height: 90px;
+
+    background-color: rgb(0, 255, 64);
+}
+#C
+{
+    width: 90px;
+    height: 90px;
+
+    background-color: rgb(46, 79, 228);
+}
+#D
+{
+    width: 90px;
+    height: 90px;
+
+    background-color: rgb(230, 18, 81);
+}
+#E
+{
+    width: 90px;
+    height: 90px;
+
+    background-color: rgb(84, 107, 136);
+}
+#F
+{
+    width: 90px;
+    height: 90px;
+
+    background-color: rgb(129, 33, 57);
+}
+#G{
+    width: 90px;
+    height: 90px;
+        background-color: rgb(39, 168, 140);
+}
+
+#Z{
+     /* margin-top: 40px; */
+     margin-left: 870px;   
+     padding-bottom: 20px;
+
+         transform:rotate(90deg) 
+
+     
+}
+/* third */
+#AA{
+    width: 90px;
+    height: 90px;
+
+    background-color: rgb(2, 255, 15);
+}
+#BB{
+  
+    width: 90px;
+    height: 90px;
+
+    background-color: rgb(12, 90, 31);
+}
+#CC
+{
+    width: 90px;
+    height: 90px;
+
+    background-color: rgb(73, 46, 228);
+}
+#DD
+{
+    width: 90px;
+    height: 90px;
+
+    background-color: rgb(216, 81, 19);
+}
+#EE
+{
+    width: 90px;
+    height: 90px;
+
+    background-color: rgb(236, 184, 13);
+}
+#FF
+{
+    width: 90px;
+    height: 90px;
+
+    background-color: rgb(109, 218, 47);
+}
+#GG{
+    width: 90px;
+    height: 90px;
+        background-color: rgb(127, 74, 212);
+}
+#HH{
+    width: 90px;
+    height: 90px;
+
+    background-color: rgb(138, 161, 150);
+}
+#II{
+  
+    width: 90px;
+    height: 90px;
+
+    background-color: rgb(73, 25, 25);
+}
+
+
+#ZZ{
+    /* padding-left: 45%;
+     transform:rotate(90deg)  */
+    
+     /* padding-: 0%; */
+     
+    
+     /* margin-top: 40px; */
+margin-left: 960px;   
+padding-bottom: 20px;
+
+    transform:rotate(90deg) 
+    
+}
+*{ 
+    background-color: aqua;
+}  

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+ <div class="container">
+    <div class="row">
+        <div class="col-md-4"></div>        
+        <div class="col-md-4">
+            <div class="dclock" id="clock">abc</div>
+        </div> 
+
+        <div class="col-md-4"></div>        
+
+    </div>
+ </div>   
+</body>
+<script>
+    function getTime(){const time=new Date()
+    console.log(time);
+    let hour=time.getHours()
+    let min=time.getMinutes()
+    let sec=time.getSeconds()
+    console.log(hour,min,sec);
+clock.innerHTML=`${hour}:${min}:${sec}:${hour>=12?"PM":"AM"}`
+setTimeout(()=>{getTime()},1000)
+    }
+    getTime()
+</script>
+</html>

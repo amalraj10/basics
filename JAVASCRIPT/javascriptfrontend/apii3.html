@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="head">MOVIES</div>
+        <img id="img1" class="img-fluid" src="https://i.postimg.cc/4NSXvj3d/movie-9pvmdtvz4cb0xl37.jpg" alt=""><br>
+        <input class="input" id="search" type="text" placeholder="Search Movies"><br>
+        <button type="button" onclick="searchData()">SEARCH</button>
+        <div id="result"></div>
+    </div>
+</body>
+</html>
+
+<script>
+async function searchData() {
+    const film = document.getElementById('search').value;
+    const apiKey = 'fa1c9c03';
+
+    try {
+        const response = await fetch(`https://www.omdbapi.com/?apikey=${apiKey}&t=${film}`);
+        
+        if (response.ok) {
+            const data = await response.json();
+            displayData(data);
+        } else {
+            console.error('Error:', response.status);
+        }
+    } catch (error) {
+        console.error('Error:', error);
+    }
+}
+
+function displayData(dataArray) {
+    const name = dataArray.Title;
+    const year = dataArray.Year;
+    const direct = dataArray.Director;
+    const poster = dataArray.Poster;
+    const language = dataArray.Language;
+    const plot = dataArray.Plot;
+    const relDate = dataArray.Released;
+    const actors = dataArray.Actors;
+
+    const result = document.getElementById('result');
+
+    result.innerHTML = `
+        <div style="margin-top:25px;" class="card">
+            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img style="margin-left:25%" src="${poster}" class="img-fluid"/>
+                <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+            </div>
+            <div class="card-body">
+                <p style="text-align:center;"><span style="font-size: 35px;">${name}</span> by <span style="font-size: 25px;">${direct}</span></p>
+                <h5 style="text-align:center;">${relDate}</h5>
+                <p style="text-align:center;font-width:bolder;font-size:17px">${actors}</p>
+                <p class="card-text">${plot}</p>
+            </div>
+        </div>
+    `;
+}
+</script>
